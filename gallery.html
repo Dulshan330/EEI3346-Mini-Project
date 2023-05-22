@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="icon" type="image/x-icon" href="resources/icon.png">
+	<link rel="stylesheet" href="CSS.css" type="text/css" >
+	<style>
+		.loadmore{
+			width: 150px;
+			height: 40px;
+			font-size: 20px;
+			font-family: Arial, Helvetica, sans-serif;
+			color: aliceblue;
+			background-color: black;
+			margin: 30px;
+		}
+		#loadMore{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+
+    <p id="upper-logo"><img src="resources/sl.jpg" id="upper-img" alt="sl" height="60px"> <img id="upper-img" src="resources/pearl.png" alt="pearl" height="60px"><a href="sign up.html"><button class="upper-bton">sign up</button></a></p>
+	
+	<ul class="navigation-bar">
+		<li class="navi-item" ><a href="home.html"><img src="resources/navi/home.png" alt="home" width="20px" height="20px"> Home</a></li>
+		<li class="navi-item"><a href="about us.html"><img src="resources/navi/about icon.png" alt="about" width="20px" height="20px"> About Us</a></li>
+		<li class="navi-item"><a href="contact us.html"><img src="Resources/navi/contact.png" alt="contact" width="20px" height="20px"> Contact Us</a> </li>
+        <li class="navi-item"><a href="gallery.html"><img src="Resources/navi/gallery.png" alt="" width="20px" height="20px"> Gallery</a></li>
+		<li class="navi-item" id="navi-item"><a href="#" class="dropdown"><img src="resources/navi/location.png" alt="location" width="20px" height="20px"> Province</a>
+			<div class="dropdown-items">
+				<a href="Sabaragamuwa.html">Sabaragamuwa Province</a>
+				<a href="northern.html">Northern Province</a>
+				<a href="western.html">Western Province</a>
+				<a href="north central.html">North Central Province</a>
+				<a href="north western.html">North Western Province</a>
+				<a href="eastern.html">Eastern Province</a>
+				<a href="central.html">Central Province</a>
+				<a href="uva.html">Uva Province</a>
+				<a href="southern.html">Southern Province</a>
+			</div>
+		
+		</li>
+		
+		
+	</ul>
+    
+
+	<h6 class="gall-head"> the pictures of the attraction places in sri lanka</h6>
+	<div id="loadMore">
+		<div class="gallery-main">
+			<div class="gall1"><img src="Resources/adams peak.jpg" alt=""><div class="gall2">Sri Padaya</div></div>
+			<div class="gall1"><img src="Resources/belilena cave.jpg" alt=""><div class="gall2">Belilena cave</div></div>
+			<div class="gall1"><img src="Resources/bopath ella.jpg" alt=""><div class="gall2">bopath ella</div></div>
+
+		</div>
+		<div class="gallery-main">
+			<div class="gall1"><img src="Resources/central/Botanical_Garden_of_Peradeniya_03-1.jpg" alt=""><div class="gall2">Peradeniya Botanical Garden </div></div>
+			<div class="gall1"><img src="Resources/central/dambullla.jpg" alt=""><div class="gall2">dambulla temple</div></div>
+			<div class="gall1"><img src="Resources/central/Lake Gregory.jpg" alt=""><div class="gall2">lake Gregory</div></div>
+
+		</div>
+		<div class="gallery-main">
+			<div class="gall1"><img src="Resources/central/Nuwara-Eliya.jpg" alt=""><div class="gall2">Nuwara Eliya</div></div>
+			<div class="gall1"><img src="Resources/central/Hakgala Botanical Gardens.jpg" alt=""><div class="gall2">hakgala botanical graden</div></div>
+			<div class="gall1"><img src="Resources/central/kandy.jpg" alt=""><div class="gall2">kandy</div></div>
+
+		</div>
+		<div class="gallery-main">
+			<div class="gall1"><img src="Resources/eastern/arugam bay.jpg" alt=""><div class="gall2">arugam bay</div></div>
+			<div class="gall1"><img src="Resources/eastern/Marble Beach.jpg" alt=""><div class="gall2">marble beach</div></div>
+			<div class="gall1"><img src="Resources/eastern/TRINCOMALEE.jpg" alt=""><div class="gall2">Trincomalee</div></div>
+
+		</div>
+		<div class="gallery-main">
+			<div class="gall1"><img src="Resources/eastern/Fort Fredrick.jpg" alt=""><div class="gall2">fort fredrick</div></div>
+			<div class="gall1"><img src="Resources/north central/Sri Maha Bodhi.jpg" alt=""><div class="gall2">sri maha bodiya</div></div>
+			<div class="gall1"><img src="Resources/north central/anuradhapura.jpg" alt=""><div class="gall2">anuradhapura</div></div>
+
+		</div>
+		<div class="gallery-main">
+			<div class="gall1"><img src="Resources/north central/kala wewa.jpg" alt=""><div class="gall2">kala wewa</div></div>
+			<div class="gall1"><img src="Resources/north central/habarana.jpg" alt=""><div class="gall2">habarana</div></div>
+			<div class="gall1"><img src="Resources/north western/Kalpitiya.jpg" alt=""><div class="gall2">Kalpitiya</div></div>
+
+		</div>
+		<div class="gallery-main" v-if="visible">
+			<div class="gall1"><img src="Resources/north western/chilow.jpg" alt=""><div class="gall2">chilow</div></div>
+			<div class="gall1"><img src="Resources/north western/kurunagala.jpg" alt=""><div class="gall2">kurunagala</div></div>
+			<div class="gall1"><img src="Resources/north western/Ridi Viharaya.jpg" alt=""><div class="gall2">ridi viharaya</div></div>
+
+		</div>
+		<div class="gallery-main" v-if="visible">
+			<div class="gall1"><img src="Resources/northern/mannar-city.jpg" alt=""><div class="gall2">mannar</div></div>
+			<div class="gall1"><img src="Resources/northern/nallur-kovil-jaffna.jpg" alt=""><div class="gall2">nallur kovil jaffna</div></div>
+			<div class="gall1"><img src="Resources/northern/mulativu-city.jpg" alt=""><div class="gall2">mulativu</div></div>
+
+		</div>
+		<div class="gallery-main" v-if="visible">
+			<div class="gall1"><img src="Resources/sabaragamuwa/kitulgala-city.jpg" alt=""><div class="gall2">kitulgala</div></div>
+			<div class="gall1"><img src="Resources/pinnawala.jpg" alt=""><div class="gall2">pinnawala</div></div>
+			<div class="gall1"><img src="Resources/southern/hikkaduwa beach.jpg" alt=""><div class="gall2">hikkaduwa beach</div></div>
+
+		</div>
+		<div class="gallery-main" v-if="visible">
+			<div class="gall1"><img src="Resources/southern/mirissa.jpg" alt=""><div class="gall2">mirissa</div></div>
+			<div class="gall1"><img src="Resources/southern/Sinharaja_Rain_Forest.jpg" alt=""><div class="gall2">Sinharaja Rain Forest</div></div>
+			<div class="gall1"><img src="Resources/southern/galle.jpg" alt=""><div class="gall2">galle</div></div>
+
+		</div>
+		<div class="gallery-main" v-if="visible">
+			<div class="gall1"><img src="Resources/uva/ella.jpg" alt=""><div class="gall2">ella</div></div>
+			<div class="gall1"><img src="Resources/uva/haputale.jpg" alt=""><div class="gall2">haputale</div></div>
+			<div class="gall1"><img src="Resources/uva/Nine Arches Bridge.jpg" alt=""><div class="gall2">Nine arches Bridge</div></div>
+
+		</div>
+		<button class="loadmore" @click="active" >load More..</button>
+	</div>
+
+	
+
+	<script src="https://unpkg.com/vue@next"></script>
+	<script>
+		let app = Vue.createApp ({
+			data: function(){
+				return{
+					visible: false
+				}
+
+			},
+			methods: {
+				active() {
+					this.visible = true
+				}
+			}
+		})
+		app.mount('#loadMore')
+
+	</script>
+	
+
+
+
+
+	<footer>
+		<ul><div class="footer-main">
+			<div class="footer-content"><a href="https://www.facebook.com/" target="_blank" > <img src="Resources/footer/fb.png" alt="fb" > Check out our facebook</a> </div>
+			<div class="footer-content"> <a href="https://www.instagram.com/" target="_blank"> <img src="Resources/footer/instergram.png" alt="instergram"> Join our instergram</a> </div>
+			<div class="footer-content"><a href="https://twitter.com/" target="_blank" > <img src="resources/footer/twitter.png" alt="twitter"> See what we tweet about</a> </div>
+			<div class="footer-content"><a href="https://www.linkedin.com/" target="_blank"><img src="resources/footer/linkedin.png" alt="linkedin">Follow us on linkedin  </a> </div>
+		</div>
+		</ul>
+		&copy; 2021 Pearl of the Indian Ocean by Dulshan Senadheera.  
+		</footer>
+</body>
+</html>

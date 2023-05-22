@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="icon" type="image/x-icon" href="Resources/icon.png">
+    <link rel="stylesheet" href="CSS.css" type="text/css">
+    
+    
+</head>
+<body>
+    <p id="upper-logo"><img id="upper-img" src="resources/sl.jpg" alt="sl" height="60px"> <img id="upper-img" src="resources/pearl.png" alt="pearl" height="60px">
+        <a href="sign up.html"><button class="upper-bton">sign up</button></a></p>
+	<ul class="navigation-bar">
+		<li class="navi-item"><a href="home.html"><img src="resources/navi/home.png" alt="home" width="20px" height="20px"> Home</a></li>
+		<li class="navi-item" ><a href="about us.html"><img src="resources/navi/about icon.png" alt="about" width="20px" height="20px"> About Us</a></li>
+        <li class="navi-item"><a href="contact us.html"><img src="Resources/navi/contact.png" alt="contact" width="20px" height="20px"> Contact Us</a> </li>
+        <li class="navi-item"><a href="gallery.html"><img src="Resources/navi/gallery.png" alt="" width="20px" height="20px"> Gallery</a></li>
+		<li class="navi-item" id="navi-item"><a href="#" class="dropdown"><img src="resources/navi/location.png" alt="location" width="20px" height="20px"> Province</a>
+			<div class="dropdown-items">
+				<a href="Sabaragamuwa.html">Sabaragamuwa Province</a>
+				<a href="northern.html">Northern Province</a>
+				<a href="western.html">Western Province</a>
+				<a href="north central.html">North Central Province</a>
+				<a href="north western.html">North Western Province</a>
+				<a href="eastern.html">Eastern Province</a>
+				<a href="central.html">Central Province</a>
+				<a href="uva.html">Uva Province</a>
+				<a href="southern.html">Southern Province</a>
+			</div>
+		
+		</li>
+        
+	</ul>
+	<div class="main-header-div" id="header3">
+        <div class="contact">
+            <div><h2>Send Message To Us</h2>
+            <form action="">
+            <input type="text" placeholder="First Name.." id="message-form"><br>
+            <input type="text" placeholder="Last Name.." id="message-form"><br>
+            <input type="email" placeholder="E-Mail.." id="message-form" name="email"><br>
+            <input type="text" placeholder="Subject.." id="message-form"><br>
+            <textarea name="textarea" id="text-area" placeholder="Message.." cols="30" rows="10"></textarea><br>
+            <button type="submit" id="contact-bton" value="submit" onclick="rec()">Submit..</button><br>
+            <button type="reset" id="contact-bton" value="reset">Reset..</button>
+            </form>
+            </div>
+            
+        </div>
+		</div>
+    
+        
+
+        <footer>
+            <ul><div class="footer-main">
+                <div class="footer-content"><a href="https://www.facebook.com/" target="_blank" > <img src="Resources/footer/fb.png" alt="fb" > Check out our facebook</a> </div>
+                <div class="footer-content"> <a href="https://www.instagram.com/" target="_blank"> <img src="Resources/footer/instergram.png" alt="instergram"> Join our instergram</a> </div>
+                <div class="footer-content"><a href="https://twitter.com/" target="_blank" > <img src="resources/footer/twitter.png" alt="twitter"> See what we tweet about</a> </div>
+                <div class="footer-content"><a href="https://www.linkedin.com/" target="_blank"><img src="resources/footer/linkedin.png" alt="linkedin">Follow us on linkedin  </a> </div>
+            </div>
+            </ul>
+            &copy; 2021 Pearl of the Indian Ocean by Dulshan Senadheera.  
+            </footer>
+
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.css">
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.common.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/6.6.5/sweetalert2.min.js"></script>
+    
+            
+            <script>
+                function rec(){
+                      swal({
+                       title: "Success!",
+                       text: "You will be replied within 3days.",
+                       type: "success",
+                       confirmButtonText: "Ok!"
+                      
+                    });
+                }
+            </script>
+</body>
+</html>

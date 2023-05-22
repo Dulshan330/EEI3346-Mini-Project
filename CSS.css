@@ -1,0 +1,947 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+		margin: auto;
+		max-width: 1920px;
+		box-shadow:0px 10px 10px grey;
+		
+}
+.upper-bton{
+	float: right;
+	margin-top: 5px;
+	padding: 10px;
+	font-size: 16px;
+	color: aliceblue;
+	background-color: dodgerblue;
+	border-radius: 12px;
+	border: none;
+}
+
+hr{
+	color: gainsboro;
+}
+
+h2{
+	color: brown;
+	font-size: 30px;
+	text-transform: capitalize;
+	font-family:arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	text-align: center;
+}
+
+h3{
+	text-transform: capitalize;
+	color: blueviolet;
+	font-size: 25px;
+	text-align: center;
+	font-family:arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+h4{
+	text-transform: capitalize;
+	font-size: 25px;
+	color: darkblue;
+	font-family:arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	margin-left: 7%;
+}
+/************************************************************************************************************************/
+/*Search bar*/
+
+
+
+
+/*****************************************************************************************************************************/
+/*navigation bar property*/
+.navigation-bar{
+	list-style-type: none;
+	background-color: dodgerblue;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px;
+	padding-left:7% ;
+}
+.navi-item{
+	float: left;
+}
+
+
+.navi-item a{
+	color: aliceblue;
+	display: block;
+	padding: 12px 20px;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.navi-item a:hover{
+	background-color: midnightblue;
+}
+#navi-item:hover .dropdown-items{
+	display: block;
+}
+.dropdown-items{
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+.dropdown-items a{
+	background-color: dodgerblue;
+}
+
+
+
+/*****************************************************************************************************************************/
+p{
+	text-align: justify;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 22px;
+	padding-left: 7%;
+	padding-right: 7%;
+}
+
+.bref-para{
+	text-align: center;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	font-size: 22px;
+	
+}
+
+
+/*****************************************************************************************************************************/
+/*vision*/
+.vision h2{
+	text-transform: capitalize;
+	font-size: 38px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+}
+.vision{
+	width: 100%;
+	background-color: aqua;
+	padding: 30px;
+	margin: 10px 0px;
+}
+
+.vision p{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 20px;
+	color: black;
+	text-align: center;
+}
+/*****************************************************************************************************************************/
+/*what including inside of body*/
+.content{
+	margin-left: 15%;
+	margin-right: 15%;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
+}
+.content-sub-pages{
+	margin: 0% 15%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: gray;
+	border-width: 2px;
+	
+}
+/*****************************************************************************************************************************/
+/*sub pages' images*/
+
+#img{
+	width: 45%;
+	margin:0px 10px;
+	border-radius: 15px;
+	float: left;
+	margin-left: 7%;
+}
+
+
+
+/*****************************************************************************************************************************/
+/*provinces background images*/
+#sg{
+	background-image: url("Resources/sabaragamuwa_div.jpg");
+}
+#np{
+	background-image: url("Resources/northen-div.jpg");
+}
+#wp{
+	background-image: url("Resources/western div.png");
+}
+#nc{
+	background-image: url("Resources/northern central div.jpg");
+}
+#nw{
+	background-image: url("Resources/north western.jpg");
+}
+#ep{
+	background-image: url("Resources/eastern div.jpg");
+}
+#cp{
+	background-image: url("Resources/central div.jpg");
+}
+#up{
+	background-image: url("Resources/uva div.jpg");
+}
+#sp{
+	background-image: url("Resources/southern div.jpg");
+}
+
+/*****************************************************************************************************************************/
+.sub-div{
+	
+	background-size: 400px 200px;
+	height: 200px;
+	width: 400px;
+	float: left;
+	margin: 0px 15px;
+	
+}
+.sub-div h2{
+	font-size: 32px;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	text-align: center;
+	color: white;
+	text-transform: capitalize;
+	top: 40%;
+	position: relative;
+	transform: translateY(-40%);
+}
+.sub-div:hover{
+	transform: scale(1.2);
+	transition: 1s;
+}
+/*************************************************************************************************************************/
+/*footer css*/
+footer{
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 10px 0px;
+	font-family: arial;
+}
+footer ul{
+	list-style-type: none;
+	padding: 0px;
+	margin: auto;
+	
+}
+.footer-main{
+	display: flex;
+	justify-content: center;
+	padding: 35px 0px;
+
+}
+.footer-content{
+	width: 200px;
+	padding: 0px 20px;
+}
+.footer-content:maover{
+	transform: scale(1.1);
+	transition: 0.5s;
+}
+.footer-content img{
+	float: left;
+}
+.footer-content a{
+	text-decoration: none;
+	color: aliceblue;
+	font-size: 20px;
+
+}
+/******************************************************************************************************************/
+#header1{
+	background-image: url("Resources/Cover-banner.jpg");
+}
+#header2{
+	background-image: url("Resources/about.jpg");
+}
+#header3{
+	background-image: url("resources/contact\ us.jpg");
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+
+.parth{
+	text-decoration: none;
+	color: gray;
+}
+ .parth:hover{
+	color: blue;
+}
+
+
+/*****************************************************************************************************************************/
+/*contact div details*/
+.contact{
+	background-color:white;
+	opacity: 0.8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 800px;
+	height: auto;
+	margin: auto;	
+	padding: 20px 0px;
+}
+
+#message-form{
+	width: 350px;
+	height: 35px;
+	margin: 6px 0px ;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+input::placeholder{
+	text-align: center;
+	font-size: 15px;
+	color: blue;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#text-area{
+	width: 350px;
+	height: 150px;
+	margin: 6px 0px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#text-area::placeholder{
+	text-align: center;
+	font-size: 15px;
+	color: blue;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#contact-bton{
+	width: 352px;
+	height: 35px;
+	background-color: blue;
+	border-radius: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: aliceblue;
+	margin: 6px  0px;
+}
+/*****************************************************************************************************************************/
+/*sign up*/
+.sign-up{
+	width: 700px;
+	margin: 20px auto;
+	text-align: center;
+	border: solid gray;
+	padding-bottom: 26px;
+	border-radius: 15px;	
+	color: brown;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.sign-detail{
+	margin: 6px;
+	width: 350px;
+	height: 35px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: none;
+	border-bottom: 3px solid dodgerblue;
+
+}
+.sign-up h3{
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: crimson;
+}
+.sign-bton{
+	width: 350px;
+	height: 35px;
+	margin: 12px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: aliceblue;
+	background-color: dodgerblue;
+	border-radius: 15px;
+}
+
+
+
+/*****************************************************************************************************************************/
+/*****************************************************************************************************************************/
+/*responsive css*/
+
+@media screen and (max-width:1920px){
+	/*home page main title*/
+	.main-title{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 100px;
+	text-transform: capitalize;
+	color:gold;
+	text-align: center;
+	top: 40%;
+	position: relative;
+	transform: translateY(-40%);
+	}
+	
+	/*main picture of home page*/
+	.main-header-div{
+		
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		height: 800px;
+		background-repeat: no-repeat;
+		margin: 0px;
+		padding: 0px;
+		border: groove;
+	}
+
+	/******************************************************************************************************************************/
+/*popular cities*/
+.city-detail{
+	display: flex;
+	justify-content: center;
+}
+.city-sub1{
+	width: 400px;
+	margin: 15px;
+	border: solid gray;
+	border-radius: 8px;
+}
+.city-sub2{
+	text-align: center;
+	font-size: 25px;
+	color: blue;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 40px 0px;
+}
+.city-sub1 img{
+	width: 400px;
+	height: 400px;
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+}
+/*****************************************************************************************************************************/
+/*Gallery proparies*/
+.gallery-main{
+	display: flex;
+	justify-content: center;
+}
+.gall1{
+	width: 370px;
+	height: 330px;
+	border: solid green;
+	margin: 20px 20px;
+}
+.gall2{
+	width: 370px;
+	height: 80px;
+	color: brown;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 25px;
+	padding-top: 20px;
+	
+}
+.gall1 img{
+	width: 370px;
+	height: 250px;
+}
+.gall-head{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	text-transform: capitalize;
+	color: crimson;
+}
+/*****************************************************************************************************************************/
+#home-divs2{
+	display: none;
+}
+/*sign up*/
+.sign-up{
+	width: 700px;
+	margin: 100px auto;
+	text-align: center;
+	border: solid gray;
+	padding-bottom: 26px;
+	border-radius: 15px;	
+	color: brown;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+	
+	
+}
+/*****************************************************************************************************************************/
+/*****************************************************************************************************************************/
+@media screen and (max-width:1366px){
+	
+	/*home page main title*/
+	.main-title{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 80px;
+	text-transform: capitalize;
+	color: gold;
+	text-align: center;
+	top: 40%;
+	position: relative;
+	transform: translateY(-40%);
+	}
+	
+	/*main picture of home page*/
+	.main-header-div{
+		
+		background-size: cover;
+		background-position: center center;
+		width: 100%;
+		height: 600px;
+		background-repeat: no-repeat;
+		margin: 0px;
+		padding: 0px;
+		border: groove;
+	}
+/******************************************************************************************************************************/
+/*popular cities*/
+.city-detail{
+	display: flex;
+	justify-content: center;
+}
+.city-sub1{
+	width: 350px;
+	margin: 10px;
+	border: solid gray;
+	border-radius: 8px;
+}
+.city-sub2{
+	text-align: center;
+	font-size: 25px;
+	color: blue;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 40px 0px;
+}
+.city-sub1 img{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	width: 350px;
+	height: 350px;
+}
+/*****************************************************************************************************************************/
+/*Gallery proparies*/
+.gallery-main{
+	display: flex;
+	justify-content: center;
+}
+.gall1{
+	width: 320px;
+	height: 280px;
+	border: solid green;
+	margin: 20px 20px;
+}
+.gall2{
+	width: 320px;
+	height: 80px;
+	color: brown;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 25px;
+	padding-top: 20px;
+	
+}
+.gall1 img{
+	width: 320px;
+	height: 200px;
+}
+.gall-head{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	text-transform: capitalize;
+	color: crimson;
+}
+/*****************************************************************************************************************************/
+#home-divs2{
+	display: none;
+}
+	
+	
+	
+}
+/*****************************************************************************************************************************/
+/*****************************************************************************************************************************/
+@media screen and (max-width:1155px) {
+	
+/******************************************************************************************************************************/
+/*popular cities*/
+.city-detail{
+	display: block;
+	
+}
+.city-sub1{
+	width: 550px;
+	margin: 10px;
+	border: solid gray;
+	border-radius: 8px;
+	margin: 10px auto;
+	
+}
+.city-sub2{
+	text-align: center;
+	font-size: 25px;
+	color: blue;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 40px 0px;
+}
+.city-sub1 img{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	width: 550px;
+	height: 350px;
+}
+/*****************************************************************************************************************************/
+/*what including inside of body*/
+
+.content-sub-pages{
+	margin: 0% 10%;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	border-style: solid;
+	border-radius: 15px;
+	border-color: gray;
+	border-width: 2px;
+}
+#img{
+	width: 86%;
+	margin:0% 7%;
+	border-radius: 15px;	
+}
+.flag{
+	width: 100%;
+}
+/*****************************************************************************************************************************/
+/*home page*/
+#home-divs{
+	display: none;
+}
+.sub-div{
+	
+	background-size: 500px 250px;
+	height: 250px;
+	width: 500px;
+	margin: 10px;
+	
+}
+#home-divs2{
+	display: grid;
+	justify-content: center;
+	margin-bottom: 30px;	
+}
+
+/*****************************************************************************************************************************/
+/*Gallery proparies*/
+.gallery-main{
+	display: grid;
+	justify-content: center;
+}
+.gall1{
+	width: 420px;
+	height: 280px;
+	border: solid green;
+	margin: 20px 20px;
+}
+.gall2{
+	width: 420px;
+	height: 80px;
+	color: brown;
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 25px;
+	padding-top: 20px;
+	
+}
+.gall1 img{
+	width: 420px;
+	height: 200px;
+}
+.gall-head{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 36px;
+	padding-left: 10px;
+	padding-right: 10px;
+	text-transform: capitalize;
+	color: crimson;
+}
+/*****************************************************************************************************************************/
+.footer-main{
+	display: grid;
+	justify-content: center;
+	padding: 35px 0px;
+}
+.footer-content{
+	width: 300px;
+	padding: 20px;
+}
+.sign-up{
+	width: 600px;
+	margin: 20px auto;
+	text-align: center;
+	border: solid gray;
+	padding-bottom: 26px;
+	border-radius: 15px;	
+	color: brown;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.sign-detail{
+	margin: 6px;
+	width: 350px;
+	height: 35px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	border: none;
+	border-bottom: 3px solid dodgerblue;
+
+}
+.sign-up h3{
+	font-size: 30px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: crimson;
+}
+.sign-bton{
+	width: 350px;
+	height: 35px;
+	margin: 12px;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: aliceblue;
+	background-color: dodgerblue;
+	border-radius: 15px;
+}
+
+
+
+}
+/*****************************************************************************************************************************/
+/*****************************************************************************************************************************/
+@media screen and (max-width:768px) {
+	
+
+/*navigation bar property*/
+.navigation-bar{
+	list-style-type: none;
+	background-color: dodgerblue;
+	overflow:hidden;
+	margin: 0px;
+	padding: 0px;
+	padding-left:7% ;
+	display: grid;
+	
+}
+.navi-item{
+	display: block;
+}
+
+
+.navi-item a{
+	color: aliceblue;
+	display: block;
+	justify-content: center;
+	padding: 12px auto;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+
+.navi-item a:hover{
+	background-color: midnightblue;
+}
+#navi-item:hover .dropdown-items{
+	display: block;
+}
+.dropdown-items{
+	display: none;
+	position: absolute;
+	z-index: 1;
+}
+.dropdown-items a{
+	background-color: dodgerblue;
+}
+.sign-up{
+	width: 500px;
+	margin: 20px auto;
+	text-align: center;
+	border: solid gray;
+	padding-bottom: 26px;
+	border-radius: 15px;	
+	color: brown;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+/*****************************************************************************************************************************/
+/*home page*/
+#home-divs{
+	display: none;
+}
+.sub-div{
+	
+	background-size: 450px 225px;
+	height: 225px;
+	width: 450px;
+	margin: 10px;
+	
+}
+#home-divs2{
+	display: grid;
+	justify-content: center;
+	margin-bottom: 30px;	
+}
+#upper-img{
+	height: 40px;
+}
+/*home page main title*/
+.main-title{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 70px;
+	text-transform: capitalize;
+	color: gold;
+	text-align: center;
+	top: 40%;
+	position: relative;
+	transform: translateY(-40%);
+}
+	
+/*main picture of home page*/
+.main-header-div{
+		background-size: cover;
+		background-position: center center;
+		height: 600px;
+		background-repeat: no-repeat;
+		margin: 0px;
+		padding: 0px;
+		border: groove;
+}
+
+}
+/*****************************************************************************************************************************/
+/****************************************************************************************************************************/
+
+@media screen and (max-width:480px) {
+	/*home page main title*/
+.main-title{
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 60px;
+	text-transform: capitalize;
+	color: gold;
+	text-align: center;
+	top: 40%;
+	position: relative;
+	transform: translateY(-40%);
+}
+	
+/*main picture of home page*/
+.main-header-div{
+		background-size: cover;
+		background-position: center center;
+		height: 400px;
+		background-repeat: no-repeat;
+		margin: 0px;
+		padding: 0px;
+		border: groove;
+}
+h3{
+	text-transform: capitalize;
+	color: blueviolet;
+	font-size: 23px;
+	text-align: center;
+	font-family:arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+h2{
+	color: brown;
+	font-size: 22px;
+	text-transform: capitalize;
+	font-family:arial, Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	text-align: center;
+}
+/*****************************************************************************************************************************/
+/*home page*/
+#home-divs{
+	display: none;
+}
+.sub-div{
+	
+	background-size: 400px 200px;
+	height: 200px;
+	width: 400px;
+	margin: 10px;
+	
+}
+#home-divs2{
+	display: grid;
+	justify-content: center;
+	margin-bottom: 30px;	
+}
+#upper-img{
+	height: 36px;
+}
+/******************************************************************************************************************************/
+/*popular cities*/
+.city-detail{
+	display: block;
+	
+}
+.city-sub1{
+	width: 400px;
+	margin: 10px;
+	border: solid gray;
+	border-radius: 8px;
+	margin: 10px auto;
+	
+}
+.city-sub2{
+	text-align: center;
+	font-size: 25px;
+	color: blue;
+	text-transform: capitalize;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 40px 0px;
+}
+.city-sub1 img{
+	border-top-left-radius: 8px;
+	border-top-right-radius: 8px;
+	width: 400px;
+	height: 200px;
+}
+.gall-head{
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	text-transform: capitalize;
+	color: crimson;
+}
+/*sign up*/
+.sign-up{
+	width: 400px;
+	margin: 100px auto;
+	text-align: center;
+	border: solid gray;
+	padding-bottom: 26px;
+	border-radius: 15px;	
+	color: brown;
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+}
+
